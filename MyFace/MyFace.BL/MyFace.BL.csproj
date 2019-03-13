@@ -4,4 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MyFace.Common\MyFace.Common.csproj" />
+    <ProjectReference Include="..\MyFace.Data\MyFace.Data.csproj" />
+    <ProjectReference Include="..\MyFace.Domain\MyFace.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

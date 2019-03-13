@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFace.Test", "MyFace.Test\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFace.Common", "MyFace.Common\MyFace.Common.csproj", "{6282C271-8BFD-4291-9AF2-E8085BB9B98F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFace.WPF", "MyFace.WPF\MyFace.WPF.csproj", "{8A20AB1C-DD20-4D57-90CD-4B7D75774761}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6282C271-8BFD-4291-9AF2-E8085BB9B98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6282C271-8BFD-4291-9AF2-E8085BB9B98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6282C271-8BFD-4291-9AF2-E8085BB9B98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A20AB1C-DD20-4D57-90CD-4B7D75774761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A20AB1C-DD20-4D57-90CD-4B7D75774761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A20AB1C-DD20-4D57-90CD-4B7D75774761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A20AB1C-DD20-4D57-90CD-4B7D75774761}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

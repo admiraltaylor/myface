@@ -55,6 +55,24 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyFace.BL\MyFace.BL.csproj">
+      <Project>{689e2c87-c104-46c9-8892-0cded8f6264e}</Project>
+      <Name>MyFace.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyFace.Common\MyFace.Common.csproj">
+      <Project>{6282c271-8bfd-4291-9af2-e8085bb9b98f}</Project>
+      <Name>MyFace.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyFace.Data\MyFace.Data.csproj">
+      <Project>{404d4ce1-d3c7-42d2-a58a-0dd3dd408a1d}</Project>
+      <Name>MyFace.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyFace.Domain\MyFace.Domain.csproj">
+      <Project>{430908b6-b259-4907-a44c-af37661f4585}</Project>
+      <Name>MyFace.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
