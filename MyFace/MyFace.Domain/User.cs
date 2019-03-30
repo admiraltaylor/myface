@@ -27,5 +27,12 @@ namespace MyFace.Domain
             this.Status = status;
             this.Message = message;
         }
+
+        public User(string firstName, string lastName, string email)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Email = email;
+        }
     }
 }

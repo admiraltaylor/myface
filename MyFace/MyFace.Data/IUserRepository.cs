@@ -7,5 +7,7 @@ namespace MyFace.Data
     {
         List<User> DownloadAllUsers();
         User DownloadSingleUser(int id);
+        User SignUpNewUser(User user, string password);
+        User LogInUser(string email, string password);
     }
 }

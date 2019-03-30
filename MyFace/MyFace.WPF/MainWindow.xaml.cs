@@ -23,6 +23,23 @@ namespace MyFace.WPF
         public MainWindow()
         {
             InitializeComponent();
+
+            // start with the login
+            GenerateLoginScreen();
+        }
+
+        internal void GenerateLoginScreen()
+        {
+            Grid_Main.Children.Clear();
+            uc_Login logIn = new uc_Login(this);
+            Grid_Main.Children.Add(logIn);
+        }
+
+        internal void GenerateSignUpScreen()
+        {
+            Grid_Main.Children.Clear();
+            uc_SignUp signUp = new uc_SignUp(this);
+            Grid_Main.Children.Add(signUp);
         }
     }
 }

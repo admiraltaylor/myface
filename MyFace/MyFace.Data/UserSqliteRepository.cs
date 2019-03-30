@@ -20,5 +20,15 @@ namespace MyFace.Data
         {
             throw new NotImplementedException();
         }
+
+        public User LogInUser(string email, string password)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User SignUpNewUser(User user, string password)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

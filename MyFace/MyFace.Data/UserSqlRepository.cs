@@ -24,9 +24,19 @@ namespace MyFace.Data
             return new User();
         }
 
+        public User LogInUser(string email, string password)
+        {
+            throw new NotImplementedException();
+        }
+
         public User MapReaderToUser(SqlDataReader reader)
         {
             return new User();
+        }
+
+        public User SignUpNewUser(User user, string password)
+        {
+            throw new NotImplementedException();
         }
     }
 }
