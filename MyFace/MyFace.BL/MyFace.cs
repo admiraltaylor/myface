@@ -15,9 +15,9 @@ namespace MyFace.BL
         // The repo will store the user and their encrypted password
         // Repo will return user with Id
         // User with Id is returned
-        public User SignUpNewUser(User newUser, string password)
+        public User SignUpNewUser(string firstName, string lastName, string email, string password)
         {
-            User user = _UserRepository.SignUpNewUser(newUser, password);
+            User user = _UserRepository.SignUpNewUser(firstName, lastName, email, password);
             return user;
         }
 
@@ -29,9 +29,7 @@ namespace MyFace.BL
         // UI will deal with null return or take user to profile page
         public User LogInUser(string email, string password)
         {
-            User user = null;
-
-            
+            User user = _UserRepository.LogInUser(email, password);
 
             return user;
         }

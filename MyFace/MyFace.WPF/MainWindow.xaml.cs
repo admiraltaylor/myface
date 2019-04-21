@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MyFace.Data;
+using MyFace.Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +22,28 @@ namespace MyFace.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        UserSqliteRepository userRepo = new UserSqliteRepository();
+
         public MainWindow()
         {
             InitializeComponent();
 
             // start with the login
             GenerateLoginScreen();
+
+            List<User> users = userRepo.DownloadAllUsers();
+
+            bool deleteTest = userRepo.DeleteUserFromDb(users[0].Id);
+
+            userRepo.SignUpNewUser("Tater", "Lowery", "taylor@gmail.com", "test");
+
+            //userRepo.LogInUser("taylor@gmail.com", "test1");
+
+            userRepo.LogInUser("taylor@gmail.com", "test");
+
+            
+
         }
 
         internal void GenerateLoginScreen()

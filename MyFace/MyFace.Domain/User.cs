@@ -13,19 +13,22 @@ namespace MyFace.Domain
         public string Status { get; set; }
         public string Message { get; set; }
 
+        // while I will initially put this directly into the SQLite DB, 
+        // eventually this will only be stored/passed around encrypted.
+        public string Password { get; set; }
+
         public User()
         {
 
         }
 
-        public User(int id, string firstName, string lastName, string email, string status, string message)
+        public User(int id, string firstName, string lastName, string email, string status)
         {
             this.Id = id;
             this.FirstName = firstName;
             this.LastName = lastName;
             this.Email = email;
             this.Status = status;
-            this.Message = message;
         }
 
         public User(string firstName, string lastName, string email)

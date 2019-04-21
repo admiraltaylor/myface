@@ -34,7 +34,7 @@ namespace MyFace.Data
             return new User();
         }
 
-        public User SignUpNewUser(string firstName, string lastName, string email, string password)
+        public User SignUpNewUser(User user, string password)
         {
             throw new NotImplementedException();
         }

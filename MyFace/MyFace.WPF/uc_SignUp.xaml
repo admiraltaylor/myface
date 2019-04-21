@@ -100,19 +100,20 @@
                     Padding="5" 
                     MouseEnter="Button_MouseEnter"
                     MouseLeave="Button_MouseLeave"
-                    Name="Button_LogIn"
-                    Click="Button_LogIn_Click" 
-                    Content="Log In"/>
-
+                    Name="Button_SignUp" 
+                    Click="Button_SignUp_Click" 
+                    Content="Sign Up"/>
+            
             <Button Grid.Column="1"
                     Grid.Row="0" 
                     Margin="5" 
                     Padding="5" 
                     MouseEnter="Button_MouseEnter"
                     MouseLeave="Button_MouseLeave"
-                    Name="Button_SignUp" 
-                    Click="Button_SignUp_Click" 
-                    Content="Sign Up"/>
+                    Name="Button_LogIn"
+                    Click="Button_LogIn_Click" 
+                    Content="Log In"/>
+
         </Grid>
 
         <Label Grid.Column="0" Grid.Row="3" Name="L_Error" Margin="5" Padding="5" />

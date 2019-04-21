@@ -60,11 +60,9 @@ namespace MyFace.WPF
                 // later, add validation to make sure password is secure enough
                 string password = PasswordBox_Password.Password;
 
-                User newUser = new User(firstName: firstName, lastName: lastName, email: email);
-
                 try
                 {
-                    newUser = _MyFace.SignUpNewUser(newUser, password);
+                    User newUser = _MyFace.SignUpNewUser(firstName, lastName, email, password);
 
                     if (newUser.Id != 0) // signing up will return the user with an Id
                     {
